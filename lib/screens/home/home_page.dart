@@ -21,7 +21,6 @@ class _MyHomePageState extends State<MyHomePage> {
     const StatisticsPage(),
     Notifications(),
     const ProfilePage(),
-    const ScanPage()
   ];
 
   @override
@@ -35,9 +34,10 @@ class _MyHomePageState extends State<MyHomePage> {
           borderRadius: BorderRadius.circular(50.0),
         ),
         onPressed: () {
-          setState(() {
-            _currentIndex = 4;
-          });
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const ScanPage()),
+          );
         },
         child: const Icon(CupertinoIcons.qrcode_viewfinder,
             size: 38, color: Colors.white),
