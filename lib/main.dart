@@ -1,4 +1,5 @@
 import 'package:ewallet/screens/home/home_page.dart';
+// import 'package:ewallet/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,10 +12,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // final theme = ThemeProvider.ThemeData();
     return MaterialApp(
       title: 'Flutter Demo',
+      // theme: theme.themeData,
       debugShowCheckedModeBanner: false,
-      home: SafeArea(child: const MyHomePage()),
+      home: MyHomePage(),
     );
   }
 }

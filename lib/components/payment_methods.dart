@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PaymentList extends StatelessWidget {
@@ -7,12 +8,12 @@ class PaymentList extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<Map<String, dynamic>> paymentMethods = [
       {
-        'icon': Icons.bolt,
+        'icon': CupertinoIcons.bolt,
         'name': 'Electricity',
         'color': const Color.fromARGB(255, 204, 190, 1)
       },
       {
-        'icon': Icons.wifi,
+        'icon': CupertinoIcons.wifi,
         'name': 'Internet',
         'color': Color.fromARGB(255, 255, 56, 56)
       },
@@ -27,7 +28,7 @@ class PaymentList extends StatelessWidget {
         'color': const Color.fromARGB(255, 255, 0, 0)
       },
       {
-        'icon': Icons.mobile_friendly,
+        'icon': CupertinoIcons.device_phone_portrait,
         'name': 'Mobile Credit',
         'color': const Color.fromARGB(255, 22, 96, 255)
       },
@@ -37,12 +38,12 @@ class PaymentList extends StatelessWidget {
         'color': const Color.fromARGB(255, 37, 211, 2)
       },
       {
-        'icon': Icons.receipt,
+        'icon': CupertinoIcons.tickets,
         'name': 'Bill',
         'color': const Color.fromARGB(255, 255, 193, 49)
       },
       {
-        'icon': Icons.menu,
+        'icon': CupertinoIcons.circle_grid_3x3,
         'name': 'More',
         'color': const Color.fromARGB(255, 37, 211, 2)
       },
