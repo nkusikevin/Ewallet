@@ -1,7 +1,3 @@
-import 'package:ewallet/components/home_action_section.dart';
-import 'package:ewallet/components/home_nav.dart';
-import 'package:ewallet/components/payment_methods.dart';
-import 'package:ewallet/components/promoD.dart';
 import 'package:ewallet/screens/home/home_view.dart';
 import 'package:ewallet/screens/notifications/notifications.dart';
 import 'package:ewallet/screens/profile/profile.dart';
@@ -23,7 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<Widget> _pages = [
     const HomeView(),
     const StatisticsPage(),
-    const Notifications(),
+    Notifications(),
     const ProfilePage(),
     const ScanPage()
   ];
@@ -57,23 +53,23 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             IconButton(
               icon: Icon(CupertinoIcons.home,
-                  color: _currentIndex == 0 ? Colors.yellow[800] : Colors.grey),
+                  color: _currentIndex == 0 ? Colors.green[900] : Colors.grey),
               onPressed: () => setState(() => _currentIndex = 0),
             ),
             IconButton(
               icon: Icon(CupertinoIcons.chart_bar,
-                  color: _currentIndex == 1 ? Colors.yellow[800] : Colors.grey),
+                  color: _currentIndex == 1 ? Colors.green[900] : Colors.grey),
               onPressed: () => setState(() => _currentIndex = 1),
             ),
-            SizedBox.shrink(),
+            const SizedBox.shrink(),
             IconButton(
               icon: Icon(CupertinoIcons.bell,
-                  color: _currentIndex == 2 ? Colors.yellow[800] : Colors.grey),
+                  color: _currentIndex == 2 ? Colors.green[900] : Colors.grey),
               onPressed: () => setState(() => _currentIndex = 2),
             ),
             IconButton(
               icon: Icon(CupertinoIcons.person,
-                  color: _currentIndex == 3 ? Colors.yellow[800] : Colors.grey),
+                  color: _currentIndex == 3 ? Colors.green[900] : Colors.grey),
               onPressed: () => setState(() => _currentIndex = 3),
             ),
           ],
